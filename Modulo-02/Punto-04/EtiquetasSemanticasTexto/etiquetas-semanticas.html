@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas semánticas</title>
+</head>
+
+<body>
+    <h1>Etiquetas semánticas</h1>
+    <h2>Énfasis y texto destacado</h2>
+    <p><i>• &lt;i&gt;&lt;/i&gt;: texto en cursiva o &quot;itálicas&quot;. El texto incluido entre esta pareja de
+            etiquetas se visualiza inclinado y ayuda a distinguir ciertas frases dentro de un párrafo.</i></p>
+    <hr>
+    <p><b>• &lt;b&gt;&lt;/b&gt;: texto en negrita (o &quot;bold&quot; en inglés de ahí la letra utilizada). Se emplea
+            para mostrar en negrita el texto contenido dentro de las etiquetas.</b></p>
+    <hr>
+    <p><em>&lt;em&gt;&lt;/em&gt;: se usa para enfatizar una determinada palabra o frase en el texto. Su aspecto por
+            defecto es el de letra cursiva.</em></p>
+    <hr>
+    <p><strong>&lt;strong&gt;&lt;/strong&gt;: se emplea para destacar de manera prominente (fuerte) una palabra o frase
+            en el texto. Su aspecto por defecto es el de letra en negrita.</strong></p>
+    <hr>
+    <h2>Correcciones e inserciones</h2>
+
+    <p><del>• &lt;del&gt;&lt;/del&gt;: se utiliza para indicar que el texto que rodea se ha eliminado del texto
+            original. Por defecto los navegadores lo muestran como un texto tachado, pero se puede ocultar con CSS para
+            que lo procesen las máquinas pero no lo vean los usuarios.</del></p>
+    <p><ins>• &lt;ins&gt;&lt;/ins&gt;: su función es indicar que el texto que rodea es una nueva inserción que no estaba
+            en el texto original de la página. Los navegadores lo suelen mostrar con una línea por debajo, como un
+            subrayado. Se puede retirar esa línea con CSS para evitar que lo vean las personas, pero que siga indicando
+            que es una inserción nueva.</ins></p>
+
+    <h2>Cite y datetime en las etiquets del y ins</h2>
+    <p><strong>cite</strong>: una dirección URL en la que se explica con más detalle los motivos del cambio.</p>
+    <p><strong>datetime</strong>: una fecha con el formato "YYYY-MM-DDThh:mm:ssTZD" en la que se indica el día y la hora
+        (opcional) en la
+        que se realizó el cambio en cuestión. En el formato se incluye el año, el mes, el día, la hora, los minutos, los
+        segundos y finalmente la zona horaria indicada por el desfase horario respecto a GMT. Por ejemplo:
+        "2013-07-04T17:52:00+02:00" sería el 4 de Julio de 2013 a las 15:52:00 en GMT (pero el autor estaba en la zona
+        horaria GMT+2, o sea que en esa zona horaria serían las 17:52:00).</p>
+
+
+    <p><del cite="https://developer.mozilla.org/es/docs/Web/HTML/Element/cite" datetime="2023-04-02T13:37:00+02:00">Cite
+            => Texto con las propiedades cite y datetime</ins></p>
+
+    <p><ins cite="https://developer.mozilla.org/es/docs/Web/HTML/Element/cite" datetime="2023-04-02T13:37:00+02:00">Ins
+            => Texto con las propiedades cite y datetime</ins></p>
+    <hr>
+    <h2>Citas</h2>
+
+    <blockquote>&lt;blockquote&gt;&lt;/blockquote&gt;: se utiliza para indicar que el texto contenido entre las dos
+        etiquetas
+        es una cita de otro texto externo. Se visualiza por defecto con el párrafo sangrado a la izquierda, es decir,
+        más separado del borde. Se puede indicar una URL en su atributo cite, como en el caso anterior, para indicar el
+        origen de la cita. Estas etiquetas provocan un cambio de línea (son un bloque).</blockquote>
+    <q>&lt;q&gt;&lt;/q&gt;: indican que el texto encerrado es una cita. La diferencia con el anterior es que se
+        suele
+        utilizar para citas cortas, dentro de una frase más larga (en la misma línea) y que además, por defecto, los
+        navegadores las visualizan con unas comillas alrededor. Se pueden incluir los atributos cite y datetime.</q>
+    <hr>
+    <q>No soy lo suficientemente joven para saber de todo</q>
+    <cite>Sir James M. Barrie</cite>
+
+
+    <h2>Abreviaturas, acrónimos y definiciones.</h2>
+    <p>Cuando utilizamos una abreviatura o un acrónimo en el texto podemos indicarlo mediante las etiquetas
+        <abbr></abbr>. Su atributo title sirve para manifestar su significado y se utilizará para mostrarlo en una
+        etiqueta flotante (también conocida como tooltip) cuando el ratón pase por encima:
+    </p>
+
+    <p>La palabra <abbr title="Hyper-Text Transfer Protocol">HTTP</abbr> es el protocolo utilizado en las páginas web.
+    </p>
+    <p>De manera idéntica se comporta la etiqueta &lt;dfn&gt;&lt;/dfn&gt; que sirve para marcar la posición de una
+        palabra que vamos
+        a definir, poniendo su definición en el atributo title.</p>
+    <p>La palabra <dfn title="Hyper-Text Transfer Protocol">HTTP</dfn> es el protocolo utilizado en las páginas web.
+
+    <h2>Código</h2>
+    <code>&lt;button type=&quot;button&quot; onclick=&quot;alert(&#39;Esto es un cuadro de alerta&#39;)&quot;&gt;Probar alerta&lt;/button&gt;</code>
+    <br> <br>
+    <cite>Nota: Ten en cuenta que si pones dentro de esta etiqueta &lt;code&gt; otras etiquetas HTML, éstas se
+        interpretarán y se visualizarán, es decir, no se verá el código HTML sino su resultado. Esta etiqueta no impide
+        que se interprete el código HTML sino que se limitan a mostrar lo que tengan dentro respetando el formato. Si
+        quieres visualizar código HTML tienes que sustituir el &quot;&lt;&quot; de las etiquetas por un
+        &quot;&amp;lt;&quot; y el &quot;&gt;&quot; por &quot;&amp;gt;&quot; para conseguirlo.</cite>
+    <br>
+    <hr>
+</body>
+
+</html>
