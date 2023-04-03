@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambios de línea y "wrapping"</title>
+</head>
+
+<body>
+    <h1>Cambios de línea y "wrapping"</h1>
+    <hr>
+    <h2>Evitar que una línea se rompa y cambie de nivel</h2>
+    <p style="width:100%;max-width:675px;height:200px;background-color:orange;color:white;font-size:24pt;">
+        Todo lo que siempre quisiste saber sobre HTML, CSS y JavaScript y no te atreviste a preguntar.
+    </p>
+    <hr>
+    <h2>white-space:nowrap;</h2>
+    <p
+        style="width:100%;max-width:675px;height:200px;background-color:orange;color:white;font-size:24pt;white-space:nowrap;">
+        Todo lo que siempre quisiste saber sobre HTML, CSS y JavaScript y no te atreviste a preguntar.
+    </p>
+    <hr>
+    <h2>overflow:hidden;white-space:nowrap;text-overflow:ellipsis;</h2>
+    <p
+        style="width:100%;max-width:675px;height:200px;background-color:orange;color:white;font-size:24pt;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">
+        Todo lo que siempre quisiste saber sobre HTML, CSS y JavaScript y no te atreviste a preguntar.
+    </p>
+    <hr>
+    <h2>Romper palabras largas: text-overflow:ellipsis;overflow-wrap:break-word;</h2>
+    <p
+        style="width:100%;max-width:675px;height:200px;background-color:orange;color:white;font-size:24pt;text-overflow:ellipsis;overflow-wrap:break-word;">
+        Todo lo que siempre quisiste saber sobre HTML, CSS y JavaScript y no te atreviste a preguntar.
+    </p>
+    <hr>
+</body>
+
+</html>
