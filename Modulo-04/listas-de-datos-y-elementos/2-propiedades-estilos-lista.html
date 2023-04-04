@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propiedades de estilo para listas</title>
+  </head>
+  <body>
+    <h1>Propiedades de estilo para listas</h1>
+    <ul>
+      <li>
+        <strong>none</strong>: sin ningún tipo de elemento en el lateral. Es muy
+        importante, pues se emplea cuando la lista se va a utilizar como un menú
+        o cualquier otro elemento de navegación cuyo aspecto vamos a cambiar
+        para integrar en la página. Queremos la semántica de la etiqueta pero no
+        sus efectos estéticos por defecto.
+      </li>
+      <li>
+        <strong>disc</strong>: un círculo negro relleno. Suele ser el valor por
+        defecto.
+      </li>
+      <li><strong>circle</strong>: un círculo hueco.</li>
+      <li><strong>square</strong>: un cuadrado relleno.</li>
+      <li>
+        <strong>decimal</strong>: números decimales. Es el valor por defecto
+        para las listas ordenadas.
+      </li>
+      <li>
+        <strong>decimal-leading-zero</strong>: idéntico al anterior pero
+        rellenando con ceros a la izquierda para que sea estilo 01, 02, 03...
+      </li>
+      <li><strong>lower-roman</strong>: números romanos en minúsculas.</li>
+      <li><strong>upper-roman</strong>: números romanos en mayúsculas.</li>
+      <li>
+        <strong>lower-alpha / lower-latin</strong>: usando letras desde la A a
+        la Z para numerar: a, b, c...
+      </li>
+      <li>
+        <strong>upper-alpha / upper-latin</strong>: igual que el anterior pero
+        con letras mayúsculas.
+      </li>
+      <li>
+        <strong>lower-greek</strong>: utiliza las letras clásicas griegas para
+        numerar (alfa, beta, gamma...)
+      </li>
+    </ul>
+    <hr />
+    <h2>Tutores de campusMVP - none</h2>
+    <ol style="list-style-type: none">
+      <li>José Manuel Alarcón</li>
+      <li>José María Aguilar</li>
+      <li>Eduard Tomás i Avellana</li>
+    </ol>
+    <h2>Tutores de campusMVP - square</h2>
+    <ol style="list-style-type: square">
+      <li>José Manuel Alarcón</li>
+      <li>José María Aguilar</li>
+      José Manuel Alarcón José María Aguilar
+      <li>Eduard Tomás i Avellana</li>
+    </ol>
+    <h2>Tutores de campusMVP - upper-roman</h2>
+    <ol style="list-style-type: upper-roman">
+      <li>José Manuel Alarcón</li>
+      <li>José María Aguilar</li>
+      <li>Eduard Tomás i Avellana</li>
+    </ol>
+    <h2>Tutores de campusMVP - lower-alpha</h2>
+    <ol style="list-style-type: lower-alpha">
+      <li>José Manuel Alarcón</li>
+      <li>José María Aguilar</li>
+      <li>Eduard Tomás i Avellana</li>
+    </ol>
+    <h2>Tutores de campusMVP - lower-greek</h2>
+    <ol style="list-style-type: lower-greek">
+      <li>José Manuel Alarcón</li>
+      <li>José María Aguilar</li>
+      <li>Eduard Tomás i Avellana</li>
+    </ol>
+    <hr />
+    <h2>Tutores de campusMVP - check.gif</h2>
+    <ul
+      style="
+        list-style-image: url('https://www.dofactory.com/img/css/leaf_icon.jpg');
+      "
+    >
+      <li style="padding-top: 5px">José Manuel Alarcón</li>
+      <li style="padding-top: 5px">José María Aguilar</li>
+      <li style="padding-top: 5px">Eduard Tomás i Avellana</li>
+    </ul>
+
+    <h2>Viñetas fuera o dentro</h2>
+    <h3>outside</h3>
+    <ul style="list-style-position: outside">
+      <li>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+        aspernatur harum ad doloremque eos quos quia voluptate perferendis
+        sapiente quis. Corporis, ipsum architecto asperiores perspiciatis amet
+        in accusamus. Provident, excepturi.
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur,
+        molestias, quidem, consequuntur, at possimus libero doloribus repellat
+        expedita id hic quia eaque incidunt. Perspiciatis, facere voluptatum cum
+        magni cupiditate iste.
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga,
+        voluptas, ea inventore molestiae veniam labore repudiandae beatae quam
+        iste ut voluptate est fugiat voluptatum incidunt harum explicabo
+        laboriosam. Minima, incidunt!
+      </li>
+    </ul>
+    <h3>inside</h3>
+    <ul style="list-style-position: inside">
+      <li>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+        aspernatur harum ad doloremque eos quos quia voluptate perferendis
+        sapiente quis. Corporis, ipsum architecto asperiores perspiciatis amet
+        in accusamus. Provident, excepturi.
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur,
+        molestias, quidem, consequuntur, at possimus libero doloribus repellat
+        expedita id hic quia eaque incidunt. Perspiciatis, facere voluptatum cum
+        magni cupiditate iste.
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga,
+        voluptas, ea inventore molestiae veniam labore repudiandae beatae quam
+        iste ut voluptate est fugiat voluptatum incidunt harum explicabo
+        laboriosam. Minima, incidunt!
+      </li>
+    </ul>
+    <hr />
+    <h2>Ahora, todo a la vez</h2>
+    <ul
+      style="
+        list-style: square
+          url('https://www.dofactory.com/img/css/leaf_icon.jpg') inside;
+      "
+    >
+      <li>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+        aspernatur harum ad doloremque eos quos quia voluptate perferendis
+        sapiente quis. Corporis, ipsum architecto asperiores perspiciatis amet
+        in accusamus. Provident, excepturi.
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur,
+        molestias, quidem, consequuntur, at possimus libero doloribus repellat
+        expedita id hic quia eaque incidunt. Perspiciatis, facere voluptatum cum
+        magni cupiditate iste.
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga,
+        voluptas, ea inventore molestiae veniam labore repudiandae beatae quam
+        iste ut voluptate est fugiat voluptatum incidunt harum explicabo
+        laboriosam. Minima, incidunt!
+      </li>
+    </ul>
+  </body>
+</html>
