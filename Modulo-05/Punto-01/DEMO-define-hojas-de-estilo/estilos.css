@@ -1,0 +1,30 @@
+p {
+  text-align: justify;
+  text-indent: 2em;
+  white-space: pre-line;
+  padding: 0 1rem 1rem 1rem;
+}
+
+h1 {
+  color: rgb(180, 0, 0);
+}
+h2 {
+  color: rgb(255, 120, 0);
+}
+
+#titulo-principal {
+  color: red;
+}
+
+.subrayado {
+  text-decoration: underline;
+}
+
+.azul {
+  background-color: lightblue;
+  color: darkblue;
+}
+
+.extra-grande {
+  font-size: 3rem;
+}
