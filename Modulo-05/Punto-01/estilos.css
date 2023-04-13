@@ -1,0 +1,16 @@
+#titulo-principal {
+  color: rgb(221, 0, 173);
+  margin-bottom: 3rem;
+}
+
+.azul-morado {
+  color: rgb(111, 79, 228);
+}
+
+.subrayado {
+  text-decoration: underline;
+}
+
+.extra-grande {
+  font-size: 4em;
+}
