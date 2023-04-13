@@ -1,0 +1,54 @@
+/* Styles */
+
+@import "extra.css";
+
+ul li {
+  list-style: square;
+  margin: 2em 20% 15px 0;
+}
+
+#content {
+  -webkit-font-smoothing: antialiased;
+  background: url(img/gradient.png);
+  background: linear-gradient(to bottom, red, rgba(255, 0, 0, 0));
+}
+
+@media only screen and (min-width: 35em) {
+  #content {
+    width: 50%;
+  }
+}
+
+.item + .item,
+.item ~ .item {
+  margin-left: -15px;
+}
+
+#buttons .lotsofcontent,
+#buttons > *,
+input[type="submit"] {
+  border-radius: 0.3rem;
+}
+
+a:hover,
+a:focus {
+  color: green;
+}
+
+blockquote::before,
+blockquote::after {
+  content: "\201d";
+}
+
+#caja-roja {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: rgb(200, 0, 0);
+    color: white;
+}
+
+.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
