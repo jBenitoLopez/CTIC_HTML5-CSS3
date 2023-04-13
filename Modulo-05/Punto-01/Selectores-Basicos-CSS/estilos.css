@@ -1,0 +1,34 @@
+* {
+  color: grey;
+}
+
+h1,
+h2 {
+  color: darkgreen;
+  font-weight: bolder;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: greenyellow;
+  background-color: darkgreen;
+  padding: 0.5em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+#titulo-principal {
+  font-size: 3em;
+  color: rgb(0, 150, 0);
+}
+
+.azul {
+  color: blue;
+  background-color: rgb(215, 215, 255);
+}
+
+#extra-grande {
+  font-size: 4em;
+}
