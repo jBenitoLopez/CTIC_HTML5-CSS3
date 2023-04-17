@@ -1,0 +1,24 @@
+#tit-principal {
+  color: purple;
+  margin-bottom: 19px;
+}
+
+.azul {
+  color: blue;
+}
+
+.subrayada {
+  text-decoration: underline;
+}
+
+.extra-grande {
+  font-size: 3em;
+}
+
+.subrayada.azul {
+  font-weight: bold;
+}
+
+h1 + p {
+  text-indent: 2em;
+}

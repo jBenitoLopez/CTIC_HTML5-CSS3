@@ -1,0 +1,39 @@
+!<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEMO: selectores</title>
+    <style rel="stylesheet" type="text/css">
+      body > p {
+        color: red;
+      }
+
+      div > span {
+        color: green;
+      }
+
+      h1 ~ h2 {
+        background-color: aqua;
+      }
+
+      h1 + h2 {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>DEMO: Combinación de selectores</h1>
+    <div class="contenido">
+      <h1 class="titular">Título 1</h1>
+      <p>Texto 1 <span>con un span dentro</span></p>
+      <h2>Título 2</h2>
+      <p>Texto 2</p>
+      <span>Span 2 dentro del div</span>
+      <h1>Titulo 3</h1>
+      <h2>Subtítulo</h2>
+      <p>Texto 3</p>
+    </div>
+    <p>Texto fuera del DIV</p>
+  </body>
+</html>
