@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Selectores de atributos</title>
+    <style type="text/css">
+      span {
+        display: block;
+      }
+
+      /* #contenedor {} */
+      div[id="contenedor"] {
+        border: 1px solid green;
+      }
+
+      /* div.azul {background-color: aqua;} */
+      div[class~="Azul"] {
+        /* case sensitive */
+        background-color: aqua;
+      }
+
+      div[class~="azul"],
+      div[class~="grande"] {
+        /* case sensitive */
+        background-color: greenyellow;
+      }
+
+      a[href^="mailto:"] {
+        background-image: url("email.png");
+        background-position-x: left;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        padding-left: 16px;
+      }
+
+      a[href$=".pdf"] {
+        background-image: url("pdf.gif");
+        background-position-x: left;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        padding-left: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contenedor">
+      <div class="Azul">Azul div</div>
+      <span class="azul">azul span</span>
+      <span class="Azul">Azul span</span>
+      <div class="azul grande">azul grande div</div>
+      <br />
+      <a href="mailto:info@campusmvp.com">campusMVP 1</a><br />
+      <a href="mailto:info@campusmvp.com">campusMVP 2</a><br /><br />
+      <a href="documento.pdf">Documento PDF importante 1</a> |
+      <a href="documento.pdf">Documento PDF importante 2</a> |
+      <a href="documento.pdf">Documento PDF importante 3</a><br />
+    </div>
+  </body>
+</html>
