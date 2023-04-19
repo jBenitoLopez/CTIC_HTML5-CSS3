@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eje. 1</title>
+    <style>
+      a {
+        display: inline-block;
+      }
+
+      ul > li {
+        padding: 0.2rem;
+      }
+
+      ul > li:nth-child(even) {
+        font-weight: bold;
+        color: blue;
+      }
+
+      ul > li:nth-child(even) > a {
+        text-decoration: none;
+      }
+
+      ul > li > a[href*="campusmvp"]::first-letter {
+        color: red;
+        font-size: 1.5rem;
+      }
+
+      ul > li:nth-child(odd) > a[href*="wikipedia.org"] {
+        color: orange;
+      }
+
+      ul > li:nth-child(3n) {
+        background-color: hsla(61, 100%, 50%, 0.61);
+      }
+    </style>
+  </head>
+  <body>
+    <h2><a href="./index.html">Home</a></h2>
+    <hr />
+    <ul>
+      <li><a href="https://jsonbin.io/">JSON-Appi</a></li>
+      <li>
+        <a href="https://github.com/midudev/aprendiendo-react"
+          >Aprendiendo React</a
+        >
+      </li>
+      <li><a href="https://es.wikipedia.org/wiki/CSS">Wikipedia-CSS</a></li>
+      <li><a href="https://testingsostenible.com/">Testing Sostenible</a></li>
+      <li><a href="https://es.javascript.info/">Aprende JavaScript</a></li>
+      <li>
+        <a href="https://formacion.clusterticgalicia.com/"
+          >Cluster Tic Galicia</a
+        >
+      </li>
+      <li>
+        <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design"
+          >Freecode Camp</a
+        >
+      </li>
+      <li><a href="https://es.wikipedia.org/wiki/HTML5">Wikipedia-HTML5</a></li>
+      <li>
+        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+          >Documentacion de JavaSript</a
+        >
+      </li>
+      <li><a href="https://campus.open-bootcamp.com/">Open Bootcamp</a></li>
+      <li>
+        <a
+          href="https://underpost.net/ir/pdf/cy3/el-libro-negro-del-programador.pdf"
+          >Libro negro de Programador</a
+        >
+      </li>
+      <li><a href="https://aulas.campusmvp.com/">Campus MVP</a></li>
+      <li><a href="https://cssbattle.dev/">CSS Battle</a></li>
+      <li><a href="https://flexboxfroggy.com/#es">Flexbox Froggy</a></li>
+      <li>
+        <a href="https://docs.emmet.io/cheat-sheet/">Emmet Cheat-sheet</a>
+      </li>
+    </ul>
+  </body>
+</html>
