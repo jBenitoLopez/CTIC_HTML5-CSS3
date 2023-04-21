@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eje.5</title>
+    <style>
+      td[colspan] {
+        background-color: lightgrey;
+      }
+      td[colspan]::before {
+        content: "UNION(";
+        font-weight: bold;
+        color: red;
+      }
+      td[colspan]::after {
+        content: ")";
+        font-weight: bold;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2><a href="./index.html">Home</a></h2>
+    <hr />
+    <div class="ejercicio">
+      5. Introduce una tabla de cualquier tamaño en un documento (por ejemplo
+      5x5, utiliza algún editor gráfico puesto que aún no hemos visto las
+      tablas, o haz este ejercicio cuando ya hayamos estudiado las tablas, como
+      prefieras). Haz que una de las celdas abarque las 3 celdas contiguas en
+      horizontal.<br /><br />
+      Crea un selector que te permita aplicar un estilo concreto a cualquier
+      celda que abarque más de una celda contigua (es decir, a las que ocupen
+      varias columnas). Aplica una regla CSS que te permita cambiar el estilo de
+      las celdas vacías, para que se muestren de manera diferente, por ejemplo
+      con un color de fondo gris claro y un guión en su contenido.
+    </div>
+    <hr />
+
+    <table border="1">
+      <tr>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+      </tr>
+      <tr>
+        <td>1.1</td>
+        <td>1.2</td>
+        <td colspan="3">1.3-1.4-1.5</td>
+      </tr>
+      <tr>
+        <td>2.1</td>
+        <td>2.2</td>
+        <td>2.3</td>
+        <td>2.4</td>
+        <td>2.5</td>
+      </tr>
+      <tr>
+        <td>3.1</td>
+        <td>3.2</td>
+        <td>3.3</td>
+        <td>3.4</td>
+        <td>3.5</td>
+      </tr>
+      <tr>
+        <td colspan="3">4.1-4.2-4.3</td>
+        <td>4.4</td>
+        <td>4.5</td>
+      </tr>
+      <tr>
+        <td>5.1</td>
+        <td>5.2</td>
+        <td>5.3</td>
+        <td>5.4</td>
+        <td>5.5</td>
+      </tr>
+    </table>
+  </body>
+</html>
