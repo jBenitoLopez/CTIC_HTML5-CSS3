@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eje.6</title>
+    <style>
+      table {
+        border: 1rem inset darkgrey;
+        border-radius: 0.5rem;
+        /* border-collapse:collapse; */
+      }
+      tr {
+      }
+      td {
+        padding: 0;
+        height: 32px;
+        width: 32px;
+        /* border-collapse:collapse; */
+        background-color: blanchedalmond;
+      }
+      tr:nth-of-type(odd) td:nth-of-type(even),
+      tr:nth-of-type(even) td:nth-of-type(odd) {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <h2><a href="./index.html">Home</a></h2>
+    <hr />
+    <div class="ejercicio">
+      6. Crea otra tabla, esta vez asegurándote de que es cuadrada, y consigue
+      un efecto de "Tablero de ajedrez" en la misma, de modo que las celdas
+      alternen su color de fondo entre el blanco y el negro. <br /><br />Cuando
+      lo hayas conseguido cambia el selector para que solamente las celdas en
+      diagonal (de izquierda a abajo) sean las que se ponen de color negro,
+      dejando las demás blancas (Pista: no se puede conseguir con un único
+      selector CSS). <br /><br />Lo importante de este ejercicio es ver cómo
+      funcionan los pseudo-elementos que seleccionan hijos cuando los queremos
+      hacer actuar sobre tablas, que es distinto a cómo lo hacen en otros tipos
+      de elementos.
+    </div>
+    <hr />
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>
