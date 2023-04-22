@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05 DEMO: Propiedades básicas del modelo de cajas</title>
+    <style>
+      #border-box {
+        box-sizing: border-box;
+      }
+      #contenedor {
+        box-sizing: inherit;
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+        height: 200px;
+        border: 2px solid darkred;
+        background-color: lightpink;
+      }
+
+      #interno {
+        box-sizing: inherit;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: 100px;
+        background-color: lightblue;
+        padding: 20px;
+        border: 10px dotted blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Border Box</h1>
+    <div id="border-box">
+      <div id="contenedor">
+        <div id="interno">Hola mundo</div>
+      </div>
+    </div>
+    <h1>Content Box</h1>
+    <div id="content-box">
+      <div id="contenedor">
+        <div id="interno">Hola mundo</div>
+      </div>
+    </div>
+  </body>
+</html>
