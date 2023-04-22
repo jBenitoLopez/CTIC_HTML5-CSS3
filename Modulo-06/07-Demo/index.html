@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>07 - DEMO: Problemas típicos con los tamaños</title>
+    <style>
+      #border-box,
+      #container-box {
+        height: 100%;
+      }
+      #border-box {
+        box-sizing: border-box;
+      }
+      #contenedor {
+        box-sizing: inherit;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 300px;
+        width: 80%;
+        height: 500px;
+        max-height: 500px;
+        border: 2px solid darkred;
+        background-color: lightpink;
+      }
+
+      #interno {
+        box-sizing: inherit;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: 80%;
+        background-color: lightblue;
+        padding: 20px;
+        border: 10px dotted blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Border Box</h1>
+    <div id="border-box">
+      <div id="contenedor">
+        <div id="interno">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo unde
+          blanditiis dolorum maxime sapiente aliquid, maiores eius atque
+          voluptatibus consequatur dolor. Quisquam architecto ducimus cum!
+          Dignissimos, laborum. Dolore, maiores assumenda. Expedita doloremque
+          rerum sapiente dolores accusamus possimus.
+        </div>
+      </div>
+    </div>
+    <h1>Content Box</h1>
+    <div id="content-box">
+      <div id="contenedor">
+        <div id="interno">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo unde
+          blanditiis dolorum maxime sapiente aliquid, maiores eius atque
+          voluptatibus consequatur dolor. Quisquam architecto ducimus cum!
+          Dignissimos, laborum. Dolore, maiores assumenda. Expedita doloremque
+          rerum sapiente dolores accusamus possimus.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
