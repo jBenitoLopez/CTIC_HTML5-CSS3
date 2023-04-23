@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eje.5</title>
+    <style>
+      *,
+      ::before,
+      ::after {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+      }
+      div.imagen {
+        position: relative;
+        width: 100%;
+        height: 80%;
+        background-image: url(images/wallpaper.jpg);
+        background-repeat: no-repeat;
+      }
+      div.caja-1 {
+        position: absolute;
+        top: 410px;
+        left: 230px;
+        width: 100px;
+        height: 100px;
+        background-color: rgba(255, 0, 0, 0.5);
+        border-radius: 50%;
+      }
+      div.caja-2 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        background: url(images/fondoMar.png);
+        background-size: cover;
+      }
+      div.caja-3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgb(39, 255, 249);
+        background: linear-gradient(
+          180deg,
+          rgba(39, 255, 249, 0.2) 0%,
+          rgba(20, 135, 255, 0.6) 78%,
+          rgba(23, 250, 2, 0.5) 100%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Eje. 5</h1>
+    <p>
+      Juega con los valores de transparencia de los fondos de las cajas. Crea
+      algunas cajas anidadas dentro de otras con fondos sólidos y transparentes.
+    </p>
+    <hr />
+    <div class="imagen">
+      <div class="caja-1"></div>
+      <div class="caja-2"></div>
+      <div class="caja-3"></div>
+    </div>
+  </body>
+</html>
