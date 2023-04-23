@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eje. 1</title>
+    <style>
+      body {
+        height: 100vh;
+        width: 100%;
+      }
+      div {
+        margin-top: 1rem;
+      }
+      #caja-1 {
+        height: 30%;
+        width: 30%;
+        border: 1px solid red;
+        background-color: antiquewhite;
+      }
+      #caja-2 {
+        height: 200px;
+        width: 400px;
+        border: 5px dotted blue;
+        background: rgb(131, 58, 180);
+        background: linear-gradient(
+          90deg,
+          rgba(131, 58, 180, 1) 0%,
+          rgba(253, 29, 29, 1) 50%,
+          rgba(252, 176, 69, 1) 100%
+        );
+      }
+      #caja-3 {
+        height: 15rem;
+        width: 20rem;
+        border: 3px double green;
+        background-image: url(./images/girl.avif);
+        background-size: cover;
+      }
+      #caja-4 {
+        height: 15em;
+        width: 20em;
+        border: 1cm inset yellow;
+      }
+      #caja-5 {
+        box-sizing: content-box;
+        height: 5cm;
+        width: 15cm;
+        border: 0.5cm double yellow;
+        background: rgb(255, 39, 133);
+        background: radial-gradient(
+          circle,
+          rgba(255, 39, 133, 1) 0%,
+          rgba(76, 255, 20, 1) 67%,
+          rgba(2, 116, 250, 1) 100%
+        );
+      }
+      #caja-6 {
+        box-sizing: border-box;
+        height: 5cm;
+        width: 15cm;
+        border: 0.5cm double yellow;
+        background: rgb(255, 39, 133);
+        background: radial-gradient(
+          circle,
+          rgba(255, 155, 133, 1) 0%,
+          rgba(76, 255, 155, 1) 67%,
+          rgba(155, 116, 250, 1) 100%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Eje. 1</h1>
+    <p>
+      Crea varias cajas de diferentes tamaños en una página vacía y experimenta
+      con sus tamaños (utilizando varios tipos de unidades de medida absolutas y
+      relativas), bordes y sus tipos y dimensiones, rellenos y márgenes
+    </p>
+    <hr />
+    <h2>Caja 1</h2>
+    <div id="caja-1"></div>
+    <h2>Caja 2</h2>
+    <div id="caja-2"></div>
+    <h2>Caja 3</h2>
+    <div id="caja-3"></div>
+    <h2>Caja 4</h2>
+    <div id="caja-4"></div>
+    <h2>Caja 5</h2>
+    <h3>Content-box</h3>
+    <div id="caja-5"></div>
+    <h2>Caja 6</h2>
+    <h3>Border-box</h2>
+    <div id="caja-6"></div>
+    <br /><br />
+  </body>
+</html>
