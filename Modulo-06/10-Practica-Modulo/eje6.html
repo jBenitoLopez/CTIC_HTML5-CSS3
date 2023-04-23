@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eje. 6</title>
+    <style>
+      .padre {
+        position: relative;
+        width: 1500px;
+        height: 850px;
+        background-color: yellow;
+        border: 5px solid orangered;
+      }
+      /* .hijo {
+        position: absolute;
+        width: 1000px;
+        height: 550px;
+        background-image: url(images/peakpx.jpg);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      } */
+      .hijo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 1000px;
+        height: 550px;
+        background-image: url(images/peakpx.jpg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Eje. 6</h1>
+    <p>
+      Inserta alguna imagen de fondo más pequeña que la caja en la que se aplica
+      (la cual deberá tener un relleno y un borde de más de 5 píxeles). Mira
+      cómo se comportan las propiedades de posicionamiento, las de relleno y las
+      de cálculo del origen y de clipping.
+    </p>
+    <hr />
+    <div class="padre">
+      <div class="hijo"></div>
+    </div>
+  </body>
+</html>
