@@ -1,0 +1,43 @@
+.centrado_vertical {
+  height: 500px;
+  width: 500px;
+  border: 1px solid black;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: aquamarine;
+}
+
+#contenedor {
+  display: table; /* OPCIONAL */
+  width: 80%;
+}
+
+#cabecera {
+  display: table-row; /*o table-cell*/
+  padding-left: 10px;
+  background-color: orange;
+}
+
+#cuerpo {
+  display: table;
+  width: 100%;
+  background-color: darkgoldenrod;
+}
+
+#lateral {
+  display: table-cell;
+  width: 25%;
+  background-color: aqua;
+}
+
+#contenido {
+  display: table-cell;
+  width: 75%;
+  background-color: lightgreen;
+}
+
+#pie {
+  display: table-row; /*o table-cell*/
+  background-color: yellow;
+}
