@@ -1,0 +1,81 @@
+:root {
+  --primary: rgb(0, 148, 255);
+  --primaryLight: rgba(0, 149, 255, 0.6);
+  --primaryDark: rgb(0, 102, 255);
+  --secundary: rgb(255, 216, 0);
+  --secundaryLight: rgb(255, 216, 0, 0.6);
+  --secundaryDark: rgb(255, 174, 0);
+  --light: #f3f3f3;
+  --dark: rgb(32, 32, 32);
+  --darkAlpha4: rgba(0, 0, 0, 0.4);
+  --green: rgb(10, 224, 10);
+  --greenLight: rgb(152, 255, 132);
+  --greenDark: rgb(6, 151, 6);
+  --violet: rgba(238, 130, 238, 1);
+  --whitePure: #fff;
+  --blackPure: #000;
+}
+
+body {
+  margin: 0;
+  font: normal 12px;
+  background: var(--primary);
+}
+
+#envoltorio {
+  width: 80%;
+  min-width: 500px;
+  margin: 0 auto;
+}
+#menu {
+  height: 40px;
+  background-color: var(--secundary);
+
+  & a {
+    display: block;
+    float: left;
+    color: white;
+    padding: 0 15px;
+    text-decoration: none;
+    line-height: 40px;
+    border-right: 1px solid var(--primary);
+
+    &:hover {
+      background-color: var(--secundaryDark);
+    }
+  }
+}
+
+#principal {
+  position: relative;
+  background-color: var(--whitePure);
+
+  & #lateral {
+    width: 200px;
+    background-color: var(--greenLight);
+    padding: 15px;
+    position: absolute;
+    left: -50px;
+    top: 30px;
+    bottom: 70px;
+    border-top: 10px solid var(--greenDark);
+    box-shadow: var(--darkAlpha4) 5px 5px;
+  }
+
+  & #contenidos {
+    margin: 0 0 0 200px;
+    padding: 20px 20px 60px 20px;
+  }
+}
+
+#pie {
+  background-color: var(--violet);
+  color: var(--whitePure);
+  padding: 0 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  line-height: 40px;
+}
