@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13.1 - DEMO: Control del scroll</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      #contenedor1 {
+        width: 300px;
+        border: 1px solid black;
+        margin: 0 auto;
+        overflow-x: scroll;
+        white-space: nowrap;
+        padding: 0 60px;
+        margin-bottom: 30px;
+        scroll-snap-type: x mandatory;
+      }
+
+      #contenedor1 .caja {
+        scroll-snap-align: center;
+      }
+
+      #contenedor2 {
+        width: 300px;
+        height: 275px;
+        border: 1px solid black;
+        margin: 0 auto;
+        overflow-y: scroll;
+        padding: 0;
+        scroll-snap-type: y mandatory;
+        margin-bottom: 30px;
+        /* scroll-padding-top: 40px; */
+      }
+
+      #contenedor2 .caja {
+        scroll-snap-align: start;
+        scroll-margin-top: 40px;
+      }
+
+      #contenedor3 {
+        width: 300px;
+        height: 275px;
+        border: 1px solid black;
+        margin: 0 auto;
+        overflow: scroll;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        scroll-snap-type: both mandatory;
+      }
+
+      #contenedor3 .caja {
+        width: 170px;
+        height: 170px;
+        scroll-snap-align: center;
+      }
+
+      #cabecera {
+        text-align: center;
+        position: sticky;
+        top: 0;
+        height: 30px;
+        line-height: 30px;
+        background-color: black;
+        color: white;
+      }
+
+      .caja {
+        border-radius: 10px;
+        display: inline-block;
+        width: 250px;
+        height: 250px;
+        border: 1px solid black;
+        margin: 10px;
+      }
+
+      .caja1 {
+        background-color: brown;
+      }
+
+      .caja2 {
+        background-color: burlywood;
+      }
+
+      .caja3 {
+        background-color: paleturquoise;
+      }
+
+      .caja4 {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>13.1 - DEMO: Control del scroll</h1>
+    <div id="contenedor1">
+      <div class="caja caja1"></div>
+      <div class="caja caja2"></div>
+      <div class="caja caja3"></div>
+      <div class="caja caja4"></div>
+    </div>
+
+    <div id="contenedor2">
+      <div id="cabecera">CABECERA</div>
+      <div class="caja caja1"></div>
+      <div class="caja caja2"></div>
+      <div class="caja caja3"></div>
+      <div class="caja caja4"></div>
+    </div>
+
+    <div id="contenedor3">
+      <div class="caja caja1"></div>
+      <div class="caja caja2"></div>
+      <div class="caja caja3"></div>
+      <div class="caja caja4"></div>
+      <div class="caja caja5"></div>
+      <div class="caja caja6"></div>
+      <div class="caja caja7"></div>
+      <div class="caja caja8"></div>
+      <div class="caja caja9"></div>
+    </div>
+  </body>
+</html>
